@@ -46,11 +46,30 @@ I am always eager to **learn new technologies** and improve my skills to deliver
 
 ---
 
-## 🚀 What I'm Currently Learning
-- Next.js  
-- Advanced React Patterns  
-- Modern UI/UX Techniques  
-- Responsive Web Architecture  
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" width="38" height="38" /> GitHub Stats & Analytics
+
+<div align="center">
+
+  <!-- Main Stats Card -->
+  <img src="https://github-readme-stats.vercel.app/api?username=salim-khan-3&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&hide=stars,issues,prs" height="195"/>
+
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=salim-khan-3&layout=compact&theme=tokyonight&hide_border=true&size_weight=0.5&count_weight=0.5" height="195"/>
+
+  <br/><br/>
+
+  <!-- Contribution Graph (বড় গ্রাফ) -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=salim-khan-3&theme=tokyo-night&hide_border=true&point=FFFFFF&area=true&area_color=0d1117" alt="Contribution Graph" width="900"/>
+
+  <br/><br/>
+
+  <!-- Streak Stats -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salim-khan-3&theme=tokyonight&hide_border=true&fire=FF4500&ring=00FF00&currStreakLabel=FFFFFF&sideLabels=FFFFFF" height="195"/>
+
+  <!-- Profile Views -->
+  <img src="https://komarev.com/ghpvc/?username=salim-khan-3&label=Profile+Views&color=0e75b6&style=flat-square" />
+
+</div>
 
 ---
 
