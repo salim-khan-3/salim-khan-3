@@ -30,11 +30,20 @@ Currently exploring **Next.js**, improving UI/UX, and learning advanced developm
 ## 📌 Featured Projects
 Here are some of the projects I’ve worked on:
 
-### ⭐ Project 1: Real-World UI Website  
-A responsive UI website built with modern HTML, CSS, and JS.  
-**Tech:** HTML, CSS, JS  
-👉 Live: *Add your live link here*  
-👉 Code: *Repository link here*
+### ⭐ Project 1: Social-Development
+A responsive React web application built with Tailwind CSS, featuring user authentication and real-time data management. 
+Tech: React, Tailwind CSS, Firebase Authentication, Node.js, Express.js, MongoDB
+
+Features:
+- User registration and login using Firebase Authentication
+- CRUD operations via RESTful API built with Node.js & Express.js
+- Responsive UI with Tailwind CSS
+- Real-time data management with MongoDB
+
+**Live Demo:** [Click here](https://resilient-nasturtium-8f9de3.netlify.app/)  
+**Client Code:** [GitHub Client Repository](https://github.com/salim-khan-3/A10-Social-Development-Clients)  
+**Server Code:** [GitHub Server Repository](https://github.com/salim-khan-3/Social_Devlopments_Server)
+
 
 ### ⭐ Project 2: React Application  
 A dynamic React project with routing, components, and hooks.  
