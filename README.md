@@ -72,43 +72,19 @@ I am always eager to **learn new technologies** and improve my skills to deliver
 </div>
 
 ---
+## GitHub Achievements
 
-## 📌 Featured Projects
-Here are some of the projects I’ve worked on:
+<div align="center">
 
-### ⭐ Project 1: Social-Development
-A responsive React web application built with Tailwind CSS, featuring user authentication and real-time data management. 
-Tech: React, Tailwind CSS, Firebase Authentication, Node.js, Express.js, MongoDB
+  <img src="https://badges.strrl.dev/github/achievements/salim-khan-3?theme=tokyonight&hideBorder=true&cardWidth=400" alt="GitHub Achievements" />
 
-Features:
-- User registration and login using Firebase Authentication
-- CRUD operations via RESTful API built with Node.js & Express.js
-- Responsive UI with Tailwind CSS
-- Real-time data management with MongoDB
-
-**Live Demo:** [Click here](https://resilient-nasturtium-8f9de3.netlify.app/)  
-**Client Code:** [GitHub Client Repository](https://github.com/salim-khan-3/A10-Social-Development-Clients)  
-**Server Code:** [GitHub Server Repository](https://github.com/salim-khan-3/Social_Devlopments_Server)
-
-
-### ⭐ Project 2: React Application  
-A dynamic React project with routing, components, and hooks.  
-**Tech:** React, Tailwind CSS  
-👉 Live: *Add your live link here*  
-👉 Code: *Repository link here*
-
-### ⭐ Project 3: Portfolio Website  
-A clean and modern portfolio website showcasing skills and projects.  
-**Tech:** HTML, CSS, JS  
-👉 Live: *Add your live link here*  
-👉 Code: *Repository link here*
-
+</div>
 ---
 
 ## 📫 Contact
-📩 Email: *Add your professional email here*  
-🌐 Portfolio: *Add when ready*  
-🔗 LinkedIn: *Add your LinkedIn link*
+📩 Email:salim33650@gmail.com 
+🌐 Portfolio:  
+🔗 LinkedIn: 
 
 ---
 ⭐ *Thanks for visiting my GitHub profile!*  
