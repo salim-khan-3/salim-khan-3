@@ -1,3 +1,11 @@
+<div align="center">
+  <img src="https://github.com/salim-khan-3/salim-khan-3/raw/main/banner.png" alt="Md Salim Islam - Web Developer" width="100%"/>
+</div>
+
+<br/>
+
+<!-- Tomar existing content shuru hobe ekhon theke -->
+
 ## 📝 About Me
 I am a passionate **Web Developer** specializing in **MERN stack** development.  
 I love building **responsive, dynamic, and user-friendly web applications**.  
