@@ -89,6 +89,27 @@ I am always eager to **learn new technologies** and improve my skills to deliver
 </div>
 
 ---
+<h2 align="center">📌 পিনড প্রজেক্টসমূহ</h2>
+
+<br>
+
+<div align="center">
+
+<a href="https://github.com/salim-khan-3/Eco-Bill-clientSide">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=Eco-Bill-clientSide&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=ffffff&icon_color=58a6ff" />
+</a>
+
+<a href="https://github.com/salim-khan-3/Game-Zone-game-library">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=Game-Zone-game-library&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=ffffff&icon_color=58a6ff" />
+</a>
+
+<a href="https://github.com/salim-khan-3/3D-Models-MERN-Stack-Project">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=3D-Models-MERN-Stack-Project&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=ffffff&icon_color=58a6ff" />
+</a>
+
+</div>
+
+---
 
 ## 📫 Contact
 📩 Email:salim33650@gmail.com 
