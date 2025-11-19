@@ -76,9 +76,10 @@ I am always eager to **learn new technologies** and improve my skills to deliver
 
 <div align="center">
 
-  <img src="https://badges.strrl.dev/github/achievements/salim-khan-3?theme=tokyonight&hideBorder=true&cardWidth=400" alt="GitHub Achievements" />
+[![trophy](https://github-profile-trophy.vercel.app/?username=salim-khan-3&theme=tokyonight&no-frame=true&margin-w=15)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
+
 ---
 
 ## 📫 Contact
