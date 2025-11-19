@@ -1,8 +1,8 @@
-# Hi, I'm Salim 👋  
-### Frontend Developer | React & JavaScript Learner
-
-I'm a passionate frontend developer focused on building clean, responsive, and modern web interfaces.  
-Currently exploring **Next.js**, improving UI/UX, and learning advanced development techniques.
+## 📝 About Me
+I am a passionate **Web Developer** specializing in **MERN stack** development.  
+I love building **responsive, dynamic, and user-friendly web applications**.  
+I am proficient in **HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, Firebase, and JWT**, and I enjoy turning ideas into real-world applications.  
+I am always eager to **learn new technologies** and improve my skills to deliver high-quality projects.
 
 ---
 
