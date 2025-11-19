@@ -89,33 +89,6 @@ I am always eager to **learn new technologies** and improve my skills to deliver
 </div>
 
 ---
-<h2 align="center">📌 পিনড প্রজেক্টসমূহ</h2>
-
-<br>
-
-<div align="center">
-
-<p align="center">
-  <a href="https://github.com/salim-khan-3/A10-Social-Development-Clients">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=A10-Social-Development-Clients&theme=tokyonight&hide_border=true&border_radius=12&show_owner=true" />
-  </a>
-</p>
-
-<br>
-
-<p align="center">
-  <a href="https://github.com/salim-khan-3/Quiz-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=Quiz-app&theme=tokyonight&hide_border=true&border_radius=15" />
-  </a>
-</p>
-
-<a href="https://github.com/salim-khan-3/3D-Models-MERN-Stack-Project">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=3D-Models-MERN-Stack-Project&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=ffffff&icon_color=58a6ff" />
-</a>
-
-</div>
-
----
 
 ## 📫 Contact
 📩 Email:salim33650@gmail.com 
