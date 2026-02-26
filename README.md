@@ -1,7 +1,6 @@
-<div align="center">
-  <img src="https://github.com/salim-khan-3/salim-khan-3/raw/main/banner.png" alt="Md Salim Islam - Web Developer" width="100%"/>
-</div>
-
+<p align="center">
+  <img src="github-banner.svg" width="100%"/>
+</p>
 <br/>
 
 <!-- Tomar existing content shuru hobe ekhon theke -->
