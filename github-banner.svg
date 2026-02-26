@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1280" height="400" viewBox="0 0 1280 400">
+
+  <defs>
+    <!-- Photo clip circle -->
+    <clipPath id="circleClip">
+      <circle cx="989" cy="200" r="127"/>
+    </clipPath>
+
+    <!-- Gradient: accent bar -->
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#06b6d4"/>
+      <stop offset="50%"  stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Typing animation keyframes via CSS -->
+    <style>
+      @keyframes blink {
+        0%,100% { opacity:1; }
+        50%      { opacity:0; }
+      }
+
+      /* Each phrase appears, holds, disappears in sequence */
+      /* Total cycle: 6 phrases × 4s each = 24s */
+
+      .phrase { display:none; }
+
+      @keyframes phrase0 {
+        0%    { opacity:0; }
+        2%    { opacity:1; }
+        14%   { opacity:1; }
+        16%   { opacity:0; }
+        100%  { opacity:0; }
+      }
+      @keyframes phrase1 {
+        0%    { opacity:0; }
+        16.5% { opacity:0; }
+        18.5% { opacity:1; }
+        30%   { opacity:1; }
+        32%   { opacity:0; }
+        100%  { opacity:0; }
+      }
+      @keyframes phrase2 {
+        0%    { opacity:0; }
+        33%   { opacity:0; }
+        35%   { opacity:1; }
+        47%   { opacity:1; }
+        49%   { opacity:0; }
+        100%  { opacity:0; }
+      }
+      @keyframes phrase3 {
+        0%    { opacity:0; }
+        50%   { opacity:0; }
+        52%   { opacity:1; }
+        64%   { opacity:1; }
+        66%   { opacity:0; }
+        100%  { opacity:0; }
+      }
+      @keyframes phrase4 {
+        0%    { opacity:0; }
+        66.5% { opacity:0; }
+        68.5% { opacity:1; }
+        80%   { opacity:1; }
+        82%   { opacity:0; }
+        100%  { opacity:0; }
+      }
+      @keyframes phrase5 {
+        0%    { opacity:0; }
+        83%   { opacity:0; }
+        85%   { opacity:1; }
+        97%   { opacity:1; }
+        99%   { opacity:0; }
+        100%  { opacity:0; }
+      }
+
+      .p0 { animation: phrase0 24s ease-in-out infinite; }
+      .p1 { animation: phrase1 24s ease-in-out infinite; }
+      .p2 { animation: phrase2 24s ease-in-out infinite; }
+      .p3 { animation: phrase3 24s ease-in-out infinite; }
+      .p4 { animation: phrase4 24s ease-in-out infinite; }
+      .p5 { animation: phrase5 24s ease-in-out infinite; }
+
+      .cursor {
+        animation: blink 0.8s step-end infinite;
+      }
+
+      /* Spinning rings */
+      @keyframes spinCW  { from { transform: rotate(0deg);   } to { transform: rotate(360deg);  } }
+      @keyframes spinCCW { from { transform: rotate(0deg);   } to { transform: rotate(-360deg); } }
+
+      .ring1 { animation: spinCW  22s linear infinite; transform-origin: 989px 200px; }
+      .ring2 { animation: spinCCW 16s linear infinite; transform-origin: 989px 200px; }
+
+      /* Fade-in on load */
+      @keyframes fadeUp {
+        from { opacity:0; transform:translateY(12px); }
+        to   { opacity:1; transform:translateY(0);    }
+      }
+      .fi1 { animation: fadeUp 0.7s ease forwards 0.2s; opacity:0; }
+      .fi2 { animation: fadeUp 0.7s ease forwards 0.5s; opacity:0; }
+      .fi3 { animation: fadeUp 0.7s ease forwards 0.8s; opacity:0; }
+      .fi4 { animation: fadeUp 0.7s ease forwards 1.0s; opacity:0; }
+      .fi5 { animation: fadeUp 0.7s ease forwards 1.2s; opacity:0; }
+
+      @keyframes fadeIn {
+        from { opacity:0; }
+        to   { opacity:1; }
+      }
+      .photo-group { animation: fadeIn 1s ease forwards 0.3s; opacity:0; }
+
+      /* Pulsing glow orb */
+      @keyframes pulseOrb {
+        0%,100% { opacity:0.5; r:200px; }
+        50%      { opacity:0.8; r:230px; }
+      }
+    </style>
+  </defs>
+
+  <!-- ═══════════════ BACKGROUND ═══════════════ -->
+  <rect width="1280" height="400" fill="#070b14"/>
+
+  <!-- Glow orbs -->
+  <circle cx="120" cy="160" r="210" fill="rgba(6,182,212,0.07)">
+    <animate attributeName="r" values="200;230;200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.8;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="-20" r="180" fill="rgba(16,185,129,0.06)"/>
+  <circle cx="850" cy="380" r="200" fill="rgba(99,102,241,0.07)">
+    <animate attributeName="r" values="190;220;190" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Dot grid -->
+  <circle cx="18" cy="18" r="1" fill="#1a2540"/><circle cx="18" cy="54" r="1" fill="#1a2540"/><circle cx="18" cy="90" r="1" fill="#1a2540"/><circle cx="18" cy="126" r="1" fill="#1a2540"/><circle cx="18" cy="162" r="1" fill="#1a2540"/><circle cx="18" cy="198" r="1" fill="#1a2540"/><circle cx="18" cy="234" r="1" fill="#1a2540"/><circle cx="18" cy="270" r="1" fill="#1a2540"/><circle cx="18" cy="306" r="1" fill="#1a2540"/><circle cx="18" cy="342" r="1" fill="#1a2540"/><circle cx="18" cy="378" r="1" fill="#1a2540"/><circle cx="54" cy="18" r="1" fill="#1a2540"/><circle cx="54" cy="54" r="1" fill="#1a2540"/><circle cx="54" cy="90" r="1" fill="#1a2540"/><circle cx="54" cy="126" r="1" fill="#1a2540"/><circle cx="54" cy="162" r="1" fill="#1a2540"/><circle cx="54" cy="198" r="1" fill="#1a2540"/><circle cx="54" cy="234" r="1" fill="#1a2540"/><circle cx="54" cy="270" r="1" fill="#1a2540"/><circle cx="54" cy="306" r="1" fill="#1a2540"/><circle cx="54" cy="342" r="1" fill="#1a2540"/><circle cx="54" cy="378" r="1" fill="#1a2540"/><circle cx="90" cy="18" r="1" fill="#1a2540"/><circle cx="90" cy="54" r="1" fill="#1a2540"/><circle cx="90" cy="90" r="1" fill="#1a2540"/><circle cx="90" cy="126" r="1" fill="#1a2540"/><circle cx="90" cy="162" r="1" fill="#1a2540"/><circle cx="90" cy="198" r="1" fill="#1a2540"/><circle cx="90" cy="234" r="1" fill="#1a2540"/><circle cx="90" cy="270" r="1" fill="#1a2540"/><circle cx="90" cy="306" r="1" fill="#1a2540"/><circle cx="90" cy="342" r="1" fill="#1a2540"/><circle cx="90" cy="378" r="1" fill="#1a2540"/><circle cx="126" cy="18" r="1" fill="#1a2540"/><circle cx="126" cy="54" r="1" fill="#1a2540"/><circle cx="126" cy="90" r="1" fill="#1a2540"/><circle cx="126" cy="126" r="1" fill="#1a2540"/><circle cx="126" cy="162" r="1" fill="#1a2540"/><circle cx="126" cy="198" r="1" fill="#1a2540"/><circle cx="126" cy="234" r="1" fill="#1a2540"/><circle cx="126" cy="270" r="1" fill="#1a2540"/><circle cx="126" cy="306" r="1" fill="#1a2540"/><circle cx="126" cy="342" r="1" fill="#1a2540"/><circle cx="126" cy="378" r="1" fill="#1a2540"/><circle cx="162" cy="18" r="1" fill="#1a2540"/><circle cx="162" cy="54" r="1" fill="#1a2540"/><circle cx="162" cy="90" r="1" fill="#1a2540"/><circle cx="162" cy="126" r="1" fill="#1a2540"/><circle cx="162" cy="162" r="1" fill="#1a2540"/><circle cx="162" cy="198" r="1" fill="#1a2540"/><circle cx="162" cy="234" r="1" fill="#1a2540"/><circle cx="162" cy="270" r="1" fill="#1a2540"/><circle cx="162" cy="306" r="1" fill="#1a2540"/><circle cx="162" cy="342" r="1" fill="#1a2540"/><circle cx="162" cy="378" r="1" fill="#1a2540"/><circle cx="198" cy="18" r="1" fill="#1a2540"/><circle cx="198" cy="54" r="1" fill="#1a2540"/><circle cx="198" cy="90" r="1" fill="#1a2540"/><circle cx="198" cy="126" r="1" fill="#1a2540"/><circle cx="198" cy="162" r="1" fill="#1a2540"/><circle cx="198" cy="198" r="1" fill="#1a2540"/><circle cx="198" cy="234" r="1" fill="#1a2540"/><circle cx="198" cy="270" r="1" fill="#1a2540"/><circle cx="198" cy="306" r="1" fill="#1a2540"/><circle cx="198" cy="342" r="1" fill="#1a2540"/><circle cx="198" cy="378" r="1" fill="#1a2540"/><circle cx="234" cy="18" r="1" fill="#1a2540"/><circle cx="234" cy="54" r="1" fill="#1a2540"/><circle cx="234" cy="90" r="1" fill="#1a2540"/><circle cx="234" cy="126" r="1" fill="#1a2540"/><circle cx="234" cy="162" r="1" fill="#1a2540"/><circle cx="234" cy="198" r="1" fill="#1a2540"/><circle cx="234" cy="234" r="1" fill="#1a2540"/><circle cx="234" cy="270" r="1" fill="#1a2540"/><circle cx="234" cy="306" r="1" fill="#1a2540"/><circle cx="234" cy="342" r="1" fill="#1a2540"/><circle cx="234" cy="378" r="1" fill="#1a2540"/><circle cx="270" cy="18" r="1" fill="#1a2540"/><circle cx="270" cy="54" r="1" fill="#1a2540"/><circle cx="270" cy="90" r="1" fill="#1a2540"/><circle cx="270" cy="126" r="1" fill="#1a2540"/><circle cx="270" cy="162" r="1" fill="#1a2540"/><circle cx="270" cy="198" r="1" fill="#1a2540"/><circle cx="270" cy="234" r="1" fill="#1a2540"/><circle cx="270" cy="270" r="1" fill="#1a2540"/><circle cx="270" cy="306" r="1" fill="#1a2540"/><circle cx="270" cy="342" r="1" fill="#1a2540"/><circle cx="270" cy="378" r="1" fill="#1a2540"/><circle cx="306" cy="18" r="1" fill="#1a2540"/><circle cx="306" cy="54" r="1" fill="#1a2540"/><circle cx="306" cy="90" r="1" fill="#1a2540"/><circle cx="306" cy="126" r="1" fill="#1a2540"/><circle cx="306" cy="162" r="1" fill="#1a2540"/><circle cx="306" cy="198" r="1" fill="#1a2540"/><circle cx="306" cy="234" r="1" fill="#1a2540"/><circle cx="306" cy="270" r="1" fill="#1a2540"/><circle cx="306" cy="306" r="1" fill="#1a2540"/><circle cx="306" cy="342" r="1" fill="#1a2540"/><circle cx="306" cy="378" r="1" fill="#1a2540"/><circle cx="342" cy="18" r="1" fill="#1a2540"/><circle cx="342" cy="54" r="1" fill="#1a2540"/><circle cx="342" cy="90" r="1" fill="#1a2540"/><circle cx="342" cy="126" r="1" fill="#1a2540"/><circle cx="342" cy="162" r="1" fill="#1a2540"/><circle cx="342" cy="198" r="1" fill="#1a2540"/><circle cx="342" cy="234" r="1" fill="#1a2540"/><circle cx="342" cy="270" r="1" fill="#1a2540"/><circle cx="342" cy="306" r="1" fill="#1a2540"/><circle cx="342" cy="342" r="1" fill="#1a2540"/><circle cx="342" cy="378" r="1" fill="#1a2540"/><circle cx="378" cy="18" r="1" fill="#1a2540"/><circle cx="378" cy="54" r="1" fill="#1a2540"/><circle cx="378" cy="90" r="1" fill="#1a2540"/><circle cx="378" cy="126" r="1" fill="#1a2540"/><circle cx="378" cy="162" r="1" fill="#1a2540"/><circle cx="378" cy="198" r="1" fill="#1a2540"/><circle cx="378" cy="234" r="1" fill="#1a2540"/><circle cx="378" cy="270" r="1" fill="#1a2540"/><circle cx="378" cy="306" r="1" fill="#1a2540"/><circle cx="378" cy="342" r="1" fill="#1a2540"/><circle cx="378" cy="378" r="1" fill="#1a2540"/><circle cx="414" cy="18" r="1" fill="#1a2540"/><circle cx="414" cy="54" r="1" fill="#1a2540"/><circle cx="414" cy="90" r="1" fill="#1a2540"/><circle cx="414" cy="126" r="1" fill="#1a2540"/><circle cx="414" cy="162" r="1" fill="#1a2540"/><circle cx="414" cy="198" r="1" fill="#1a2540"/><circle cx="414" cy="234" r="1" fill="#1a2540"/><circle cx="414" cy="270" r="1" fill="#1a2540"/><circle cx="414" cy="306" r="1" fill="#1a2540"/><circle cx="414" cy="342" r="1" fill="#1a2540"/><circle cx="414" cy="378" r="1" fill="#1a2540"/><circle cx="450" cy="18" r="1" fill="#1a2540"/><circle cx="450" cy="54" r="1" fill="#1a2540"/><circle cx="450" cy="90" r="1" fill="#1a2540"/><circle cx="450" cy="126" r="1" fill="#1a2540"/><circle cx="450" cy="162" r="1" fill="#1a2540"/><circle cx="450" cy="198" r="1" fill="#1a2540"/><circle cx="450" cy="234" r="1" fill="#1a2540"/><circle cx="450" cy="270" r="1" fill="#1a2540"/><circle cx="450" cy="306" r="1" fill="#1a2540"/><circle cx="450" cy="342" r="1" fill="#1a2540"/><circle cx="450" cy="378" r="1" fill="#1a2540"/><circle cx="486" cy="18" r="1" fill="#1a2540"/><circle cx="486" cy="54" r="1" fill="#1a2540"/><circle cx="486" cy="90" r="1" fill="#1a2540"/><circle cx="486" cy="126" r="1" fill="#1a2540"/><circle cx="486" cy="162" r="1" fill="#1a2540"/><circle cx="486" cy="198" r="1" fill="#1a2540"/><circle cx="486" cy="234" r="1" fill="#1a2540"/><circle cx="486" cy="270" r="1" fill="#1a2540"/><circle cx="486" cy="306" r="1" fill="#1a2540"/><circle cx="486" cy="342" r="1" fill="#1a2540"/><circle cx="486" cy="378" r="1" fill="#1a2540"/><circle cx="522" cy="18" r="1" fill="#1a2540"/><circle cx="522" cy="54" r="1" fill="#1a2540"/><circle cx="522" cy="90" r="1" fill="#1a2540"/><circle cx="522" cy="126" r="1" fill="#1a2540"/><circle cx="522" cy="162" r="1" fill="#1a2540"/><circle cx="522" cy="198" r="1" fill="#1a2540"/><circle cx="522" cy="234" r="1" fill="#1a2540"/><circle cx="522" cy="270" r="1" fill="#1a2540"/><circle cx="522" cy="306" r="1" fill="#1a2540"/><circle cx="522" cy="342" r="1" fill="#1a2540"/><circle cx="522" cy="378" r="1" fill="#1a2540"/><circle cx="558" cy="18" r="1" fill="#1a2540"/><circle cx="558" cy="54" r="1" fill="#1a2540"/><circle cx="558" cy="90" r="1" fill="#1a2540"/><circle cx="558" cy="126" r="1" fill="#1a2540"/><circle cx="558" cy="162" r="1" fill="#1a2540"/><circle cx="558" cy="198" r="1" fill="#1a2540"/><circle cx="558" cy="234" r="1" fill="#1a2540"/><circle cx="558" cy="270" r="1" fill="#1a2540"/><circle cx="558" cy="306" r="1" fill="#1a2540"/><circle cx="558" cy="342" r="1" fill="#1a2540"/><circle cx="558" cy="378" r="1" fill="#1a2540"/><circle cx="594" cy="18" r="1" fill="#1a2540"/><circle cx="594" cy="54" r="1" fill="#1a2540"/><circle cx="594" cy="90" r="1" fill="#1a2540"/><circle cx="594" cy="126" r="1" fill="#1a2540"/><circle cx="594" cy="162" r="1" fill="#1a2540"/><circle cx="594" cy="198" r="1" fill="#1a2540"/><circle cx="594" cy="234" r="1" fill="#1a2540"/><circle cx="594" cy="270" r="1" fill="#1a2540"/><circle cx="594" cy="306" r="1" fill="#1a2540"/><circle cx="594" cy="342" r="1" fill="#1a2540"/><circle cx="594" cy="378" r="1" fill="#1a2540"/><circle cx="630" cy="18" r="1" fill="#1a2540"/><circle cx="630" cy="54" r="1" fill="#1a2540"/><circle cx="630" cy="90" r="1" fill="#1a2540"/><circle cx="630" cy="126" r="1" fill="#1a2540"/><circle cx="630" cy="162" r="1" fill="#1a2540"/><circle cx="630" cy="198" r="1" fill="#1a2540"/><circle cx="630" cy="234" r="1" fill="#1a2540"/><circle cx="630" cy="270" r="1" fill="#1a2540"/><circle cx="630" cy="306" r="1" fill="#1a2540"/><circle cx="630" cy="342" r="1" fill="#1a2540"/><circle cx="630" cy="378" r="1" fill="#1a2540"/><circle cx="666" cy="18" r="1" fill="#1a2540"/><circle cx="666" cy="54" r="1" fill="#1a2540"/><circle cx="666" cy="90" r="1" fill="#1a2540"/><circle cx="666" cy="126" r="1" fill="#1a2540"/><circle cx="666" cy="162" r="1" fill="#1a2540"/><circle cx="666" cy="198" r="1" fill="#1a2540"/><circle cx="666" cy="234" r="1" fill="#1a2540"/><circle cx="666" cy="270" r="1" fill="#1a2540"/><circle cx="666" cy="306" r="1" fill="#1a2540"/><circle cx="666" cy="342" r="1" fill="#1a2540"/><circle cx="666" cy="378" r="1" fill="#1a2540"/><circle cx="702" cy="18" r="1" fill="#1a2540"/><circle cx="702" cy="54" r="1" fill="#1a2540"/><circle cx="702" cy="90" r="1" fill="#1a2540"/><circle cx="702" cy="126" r="1" fill="#1a2540"/><circle cx="702" cy="162" r="1" fill="#1a2540"/><circle cx="702" cy="198" r="1" fill="#1a2540"/><circle cx="702" cy="234" r="1" fill="#1a2540"/><circle cx="702" cy="270" r="1" fill="#1a2540"/><circle cx="702" cy="306" r="1" fill="#1a2540"/><circle cx="702" cy="342" r="1" fill="#1a2540"/><circle cx="702" cy="378" r="1" fill="#1a2540"/><circle cx="738" cy="18" r="1" fill="#1a2540"/><circle cx="738" cy="54" r="1" fill="#1a2540"/><circle cx="738" cy="90" r="1" fill="#1a2540"/><circle cx="738" cy="126" r="1" fill="#1a2540"/><circle cx="738" cy="162" r="1" fill="#1a2540"/><circle cx="738" cy="198" r="1" fill="#1a2540"/><circle cx="738" cy="234" r="1" fill="#1a2540"/><circle cx="738" cy="270" r="1" fill="#1a2540"/><circle cx="738" cy="306" r="1" fill="#1a2540"/><circle cx="738" cy="342" r="1" fill="#1a2540"/><circle cx="738" cy="378" r="1" fill="#1a2540"/><circle cx="774" cy="18" r="1" fill="#1a2540"/><circle cx="774" cy="54" r="1" fill="#1a2540"/><circle cx="774" cy="90" r="1" fill="#1a2540"/><circle cx="774" cy="126" r="1" fill="#1a2540"/><circle cx="774" cy="162" r="1" fill="#1a2540"/><circle cx="774" cy="198" r="1" fill="#1a2540"/><circle cx="774" cy="234" r="1" fill="#1a2540"/><circle cx="774" cy="270" r="1" fill="#1a2540"/><circle cx="774" cy="306" r="1" fill="#1a2540"/><circle cx="774" cy="342" r="1" fill="#1a2540"/><circle cx="774" cy="378" r="1" fill="#1a2540"/><circle cx="810" cy="18" r="1" fill="#1a2540"/><circle cx="810" cy="54" r="1" fill="#1a2540"/><circle cx="810" cy="90" r="1" fill="#1a2540"/><circle cx="810" cy="126" r="1" fill="#1a2540"/><circle cx="810" cy="162" r="1" fill="#1a2540"/><circle cx="810" cy="198" r="1" fill="#1a2540"/><circle cx="810" cy="234" r="1" fill="#1a2540"/><circle cx="810" cy="270" r="1" fill="#1a2540"/><circle cx="810" cy="306" r="1" fill="#1a2540"/><circle cx="810" cy="342" r="1" fill="#1a2540"/><circle cx="810" cy="378" r="1" fill="#1a2540"/><circle cx="846" cy="18" r="1" fill="#1a2540"/><circle cx="846" cy="54" r="1" fill="#1a2540"/><circle cx="846" cy="90" r="1" fill="#1a2540"/><circle cx="846" cy="126" r="1" fill="#1a2540"/><circle cx="846" cy="162" r="1" fill="#1a2540"/><circle cx="846" cy="198" r="1" fill="#1a2540"/><circle cx="846" cy="234" r="1" fill="#1a2540"/><circle cx="846" cy="270" r="1" fill="#1a2540"/><circle cx="846" cy="306" r="1" fill="#1a2540"/><circle cx="846" cy="342" r="1" fill="#1a2540"/><circle cx="846" cy="378" r="1" fill="#1a2540"/><circle cx="882" cy="18" r="1" fill="#1a2540"/><circle cx="882" cy="54" r="1" fill="#1a2540"/><circle cx="882" cy="90" r="1" fill="#1a2540"/><circle cx="882" cy="126" r="1" fill="#1a2540"/><circle cx="882" cy="162" r="1" fill="#1a2540"/><circle cx="882" cy="198" r="1" fill="#1a2540"/><circle cx="882" cy="234" r="1" fill="#1a2540"/><circle cx="882" cy="270" r="1" fill="#1a2540"/><circle cx="882" cy="306" r="1" fill="#1a2540"/><circle cx="882" cy="342" r="1" fill="#1a2540"/><circle cx="882" cy="378" r="1" fill="#1a2540"/>
+
+  <!-- Diagonal accent lines -->
+  <line x1="0" y1="0" x2="0" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="70" x2="70" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="140" x2="140" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="210" x2="210" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="280" x2="280" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="350" x2="350" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="420" x2="420" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="490" x2="490" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/><line x1="0" y1="560" x2="560" y2="0" stroke="#1e2d4a" stroke-width="1" opacity="0.6"/>
+
+  <!-- ═══════════════ ACCENT BAR ═══════════════ -->
+  <rect x="0" y="0" width="6" height="400" fill="url(#barGrad)"/>
+  <rect x="0" y="0" width="20" height="400" fill="url(#barGrad)" opacity="0.15"/>
+
+  <!-- ═══════════════ CONTENT ═══════════════ -->
+
+  <!-- Greeting -->
+  <text class="fi1" x="75" y="70"
+        font-family="'Courier New', monospace" font-size="14"
+        fill="#06b6d4" letter-spacing="2">// Hello, World! 👋</text>
+
+  <!-- Name -->
+  <text class="fi2" x="75" y="140"
+        font-family="Georgia, serif" font-size="72" font-weight="900"
+        fill="#e2e8f0" letter-spacing="-2">MD <tspan fill="#06b6d4" filter="url(#glow)">SELIM</tspan></text>
+  <text class="fi2" x="75" y="200"
+        font-family="Georgia, serif" font-size="58" font-weight="900"
+        fill="#e2e8f0" letter-spacing="-1.5">ISLAM</text>
+
+  <!-- Typing line -->
+  <g class="fi3">
+    <text x="75" y="240"
+          font-family="'Courier New', monospace" font-size="14"
+          fill="#475569">$&gt;</text>
+
+    <!-- Phrases (fade in/out) -->
+    <text x="100" y="240"
+          font-family="'Courier New', monospace" font-size="16" font-weight="600"
+          fill="#4ade80" class="p0">Full-Stack Web Developer</text>
+    <text x="100" y="240"
+          font-family="'Courier New', monospace" font-size="16" font-weight="600"
+          fill="#4ade80" class="p1">MERN Stack Specialist</text>
+    <text x="100" y="240"
+          font-family="'Courier New', monospace" font-size="16" font-weight="600"
+          fill="#4ade80" class="p2">Node.js Backend Developer</text>
+    <text x="100" y="240"
+          font-family="'Courier New', monospace" font-size="16" font-weight="600"
+          fill="#4ade80" class="p3">TypeScript Enthusiast</text>
+    <text x="100" y="240"
+          font-family="'Courier New', monospace" font-size="16" font-weight="600"
+          fill="#4ade80" class="p4">PostgreSQL &amp; Prisma Dev</text>
+    <text x="100" y="240"
+          font-family="'Courier New', monospace" font-size="16" font-weight="600"
+          fill="#4ade80" class="p5">React.js Frontend Dev</text>
+
+    <!-- Blinking cursor -->
+    <rect x="450" y="224" width="2" height="18" fill="#4ade80" class="cursor"/>
+  </g>
+
+  <!-- Separator line -->
+  <line class="fi4" x1="75" y1="262" x2="680" y2="262" stroke="#1e3a5a" stroke-width="1"/>
+
+  <!-- Tech pills -->
+  <g class="fi4">
+    <!-- React.js -->
+    <rect x="75"  y="272" width="82" height="26" rx="13" fill="rgba(34,211,238,0.08)" stroke="#22d3ee" stroke-width="1"/>
+    <text x="116" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#22d3ee">React.js</text>
+
+    <!-- Node.js -->
+    <rect x="165" y="272" width="74" height="26" rx="13" fill="rgba(74,222,128,0.08)" stroke="#4ade80" stroke-width="1"/>
+    <text x="202" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#4ade80">Node.js</text>
+
+    <!-- TypeScript -->
+    <rect x="247" y="272" width="94" height="26" rx="13" fill="rgba(96,165,250,0.08)" stroke="#60a5fa" stroke-width="1"/>
+    <text x="294" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#60a5fa">TypeScript</text>
+
+    <!-- PostgreSQL -->
+    <rect x="349" y="272" width="98" height="26" rx="13" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1"/>
+    <text x="398" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#a78bfa">PostgreSQL</text>
+
+    <!-- Prisma -->
+    <rect x="455" y="272" width="68" height="26" rx="13" fill="rgba(240,171,252,0.08)" stroke="#f0abfc" stroke-width="1"/>
+    <text x="489" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#f0abfc">Prisma</text>
+
+    <!-- MongoDB -->
+    <rect x="531" y="272" width="82" height="26" rx="13" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1"/>
+    <text x="572" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#34d399">MongoDB</text>
+
+    <!-- Express -->
+    <rect x="621" y="272" width="80" height="26" rx="13" fill="rgba(251,191,36,0.08)" stroke="#fbbf24" stroke-width="1"/>
+    <text x="661" y="289" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#fbbf24">Express</text>
+  </g>
+
+  <!-- Stats -->
+  <g class="fi5">
+    <text x="75"  y="332" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#e2e8f0">MERN Stack</text>
+    <text x="75"  y="348" font-family="'Courier New',monospace" font-size="10" fill="#475569" letter-spacing="1">EXPERTISE</text>
+    <line x1="168" y1="320" x2="168" y2="355" stroke="#1e3a5a" stroke-width="1"/>
+
+    <text x="178" y="332" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#e2e8f0">Full-Stack</text>
+    <text x="178" y="348" font-family="'Courier New',monospace" font-size="10" fill="#475569" letter-spacing="1">DEVELOPER</text>
+    <line x1="263" y1="320" x2="263" y2="355" stroke="#1e3a5a" stroke-width="1"/>
+
+    <text x="273" y="332" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#e2e8f0">TypeScript</text>
+    <text x="273" y="348" font-family="'Courier New',monospace" font-size="10" fill="#475569" letter-spacing="1">LANGUAGE</text>
+  </g>
+
+  <!-- Decorative dots -->
+  <circle cx="860" cy="30" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="878" cy="30" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="896" cy="30" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="914" cy="30" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="932" cy="30" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="860" cy="48" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="878" cy="48" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="896" cy="48" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="914" cy="48" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="932" cy="48" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="860" cy="66" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="878" cy="66" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="896" cy="66" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="914" cy="66" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="932" cy="66" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="860" cy="84" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="878" cy="84" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="896" cy="84" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="914" cy="84" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="932" cy="84" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="860" cy="102" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="878" cy="102" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="896" cy="102" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="914" cy="102" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="932" cy="102" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="860" cy="120" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="878" cy="120" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="896" cy="120" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="914" cy="120" r="2" fill="#06b6d4" opacity="0.18"/><circle cx="932" cy="120" r="2" fill="#06b6d4" opacity="0.18"/>
+
+  <!-- ═══════════════ PHOTO ═══════════════ -->
+  <g class="photo-group">
+    <!-- Spinning rings -->
+    <circle class="ring1" cx="989" cy="200" r="155"
+            fill="none" stroke="#06b6d4" stroke-width="1"
+            stroke-dasharray="8 12" opacity="0.4"/>
+    <circle class="ring2" cx="989" cy="200" r="142"
+            fill="none" stroke="#6366f1" stroke-width="1"
+            stroke-dasharray="4 16" opacity="0.3"/>
+
+    <!-- Outer glow ring -->
+    <circle cx="989" cy="200" r="133" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.25" filter="url(#softglow)"/>
+
+    <!-- White border -->
+    <circle cx="989" cy="200" r="128" fill="none" stroke="white" stroke-width="3" opacity="0.15"/>
+
+    <!-- Photo -->
+    <image href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/photo.jpg"
+           x="859" y="70" width="260" height="260"
+           clip-path="url(#circleClip)"
+           preserveAspectRatio="xMidYMin slice"/>
+
+    <!-- Name badge -->
+    <rect x="909" y="340" width="160" height="28" rx="14"
+          fill="#0d1f3c" stroke="#06b6d4" stroke-width="1"/>
+    <text x="989" y="358" text-anchor="middle"
+          font-family="'Courier New',monospace" font-size="12"
+          fill="#06b6d4">Selim Islam</text>
+  </g>
+
+</svg>
