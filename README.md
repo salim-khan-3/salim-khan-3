@@ -1,98 +1,130 @@
 <p align="center">
   <img src="github-banner.svg" width="100%"/>
 </p>
+
 <br/>
 
-<!-- Tomar existing content shuru hobe ekhon theke -->
-
-## 📝 About Me
-I am a passionate **Web Developer** specializing in **MERN stack** development.  
-I love building **responsive, dynamic, and user-friendly web applications**.  
-I am proficient in **HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, Firebase, and JWT**, and I enjoy turning ideas into real-world applications.  
-I am always eager to **learn new technologies** and improve my skills to deliver high-quality projects.
-
----
-
-## 🔥 Technologies & Tools I Use
-<table>
-  <tr>
-    <td align="center" valign="middle">
-      <strong>Frontend</strong><br/><br/>
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React"/>
-      <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
-      <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <strong>Backend</strong><br/><br/>
-      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
-      <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
-      <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-      <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT"/>
-      <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <strong>Tools & Platforms</strong><br/><br/>
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-      <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
-      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"/>
-      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
-      <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify"/>
-      <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
-    </td>
-  </tr>
-</table>
- 
+<p align="center">
+  <a href="https://github.com/salim-khan-3">
+    <img src="https://komarev.com/ghpvc/?username=salim-khan-3&label=Profile+Views&color=0e75b6&style=flat" alt="profile views"/>
+  </a>
+  <a href="https://github.com/salim-khan-3?tab=followers">
+    <img src="https://img.shields.io/github/followers/salim-khan-3?label=Followers&style=social" alt="followers"/>
+  </a>
+</p>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" width="38" height="38" /> GitHub Stats & Analytics
+## 🧑‍💻 About Me
 
-<div align="center">
-
-  <!-- Main Stats Card -->
-  <img src="https://github-readme-stats.vercel.app/api?username=salim-khan-3&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&hide=stars,issues,prs" height="195"/>
-
-  <!-- Top Languages -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=salim-khan-3&layout=compact&theme=tokyonight&hide_border=true&size_weight=0.5&count_weight=0.5" height="195"/>
-
-  <br/><br/>
-
-  <!-- Contribution Graph (বড় গ্রাফ) -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=salim-khan-3&theme=tokyo-night&hide_border=true&point=FFFFFF&area=true&area_color=0d1117" alt="Contribution Graph" width="900"/>
-
-  <br/><br/>
-
-  <!-- Streak Stats -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salim-khan-3&theme=tokyonight&hide_border=true&fire=FF4500&ring=00FF00&currStreakLabel=FFFFFF&sideLabels=FFFFFF" height="195"/>
-
-  <!-- Profile Views -->
-  <img src="https://komarev.com/ghpvc/?username=salim-khan-3&label=Profile+Views&color=0e75b6&style=flat-square" />
-
-</div>
-
----
-## GitHub Achievements
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=salim-khan-3&theme=tokyonight&no-frame=true&margin-w=15)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
+```typescript
+const selim = {
+  name:     "MD Selim Islam",
+  role:     "Full-Stack Web Developer",
+  location: "Bangladesh 🇧🇩",
+  stack:    ["React.js", "Node.js", "TypeScript", "PostgreSQL", "Prisma", "MongoDB"],
+  currently: "Building scalable MERN stack applications",
+  learning:  "Advanced TypeScript & System Design",
+  email:    "salimislam0036@gmail.com",
+  openTo:   "Freelance projects & Full-time opportunities",
+};
+```
 
 ---
 
-## 📫 Contact
-📩 Email:salim33650@gmail.com 
-🌐 Portfolio:  
-🔗 LinkedIn: 
+## 🛠️ Tech Stack
+
+**Frontend**
+
+![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-%2306B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+**Backend**
+
+![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-%23000000.svg?style=for-the-badge&logo=express&logoColor=white)
+![REST API](https://img.shields.io/badge/REST%20API-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
+
+**Database & ORM**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%234169E1.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-%232D3748.svg?style=for-the-badge&logo=prisma&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-%23FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black)
+
+**Tools & Platforms**
+
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-%230078D4.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
-⭐ *Thanks for visiting my GitHub profile!*  
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=salim-khan-3&show_icons=true&theme=tokyonight&hide_border=true&bg_color=070b14&title_color=06b6d4&icon_color=06b6d4&text_color=e2e8f0&rank_icon=github" width="49%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=salim-khan-3&theme=tokyonight&hide_border=true&background=070b14&ring=06b6d4&fire=10b981&currStreakLabel=06b6d4&sideLabels=e2e8f0&dates=64748b&sideNums=e2e8f0&currStreakNum=06b6d4" width="49%"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salim-khan-3&layout=compact&theme=tokyonight&hide_border=true&bg_color=070b14&title_color=06b6d4&text_color=e2e8f0&langs_count=8" width="40%"/>
+</p>
+
+---
+
+## 🏆 GitHub Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=salim-khan-3&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=6"/>
+</p>
+
+---
+
+## 📈 Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=salim-khan-3&bg_color=070b14&color=06b6d4&line=10b981&point=06b6d4&area=true&hide_border=true" width="100%"/>
+</p>
+
+---
+
+## 📌 Featured Projects
+
+<p align="center">
+  <a href="https://github.com/salim-khan-3/fullstack-ecommerce-react-side">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=fullstack-ecommerce-react-side&theme=tokyonight&hide_border=true&bg_color=070b14&title_color=06b6d4&icon_color=10b981&text_color=e2e8f0" width="48%"/>
+  </a>
+  <a href="https://github.com/salim-khan-3/fullstack-ecommerce-mern-ser">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=salim-khan-3&repo=fullstack-ecommerce-mern-ser&theme=tokyonight&hide_border=true&bg_color=070b14&title_color=06b6d4&icon_color=10b981&text_color=e2e8f0" width="48%"/>
+  </a>
+</p>
+
+---
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="mailto:salimislam0036@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-salimislam0036%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/salim-khan-3">
+    <img src="https://img.shields.io/badge/GitHub-salim--khan--3-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=80&section=footer"/>
+</p>
+
